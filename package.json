@@ -1,5 +1,5 @@
 {
-  "name": "mrandom",
+  "name": "@mnovo323/mrandom",
   "version": "1.0.0",
   "description": "A pythonic random library for node.",
   "main": "dist/index.js",
