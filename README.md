@@ -13,7 +13,7 @@
 ## Installation
 
 ```bash
-npm install mrandom
+npm install @mnovo323/mrandom
 ```
 
 ## Usage
