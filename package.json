@@ -1,6 +1,6 @@
 {
   "name": "@mnovo323/mrandom",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A pythonic random library for node.",
   "files": [
     "dist/",
@@ -10,7 +10,7 @@
   ],
   "main": "dist/index.js",
   "module": "dist/index.mjs",
-  "types": "dist/index.d.ts",
+  "types": "dist/types/index.d.ts",
   "exports": {
     ".": {
       "import": "./dist/index.mjs",
