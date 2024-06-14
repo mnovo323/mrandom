@@ -1,6 +1,6 @@
 {
   "name": "@mnovo323/mrandom",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A pythonic random library for node.",
   "files": [
     "dist/",
@@ -14,91 +14,113 @@
   "exports": {
     ".": {
       "import": "./dist/index.mjs",
-      "require": "./dist/index.js"
+      "require": "./dist/index.js",
+      "types": "./dist/types/index.d.ts"
     },
     "./betavariate": {
       "import": "./dist/betavariate.mjs",
-      "require": "./dist/betavariate.js"
+      "require": "./dist/betavariate.js",
+      "types": "./dist/types/betavariate.d.ts"
     },
     "./binomialvariate": {
       "import": "./dist/binomialvariate.mjs",
-      "require": "./dist/binomialvariate.js"
+      "require": "./dist/binomialvariate.js",
+      "types": "./dist/types/binomialvariate.d.ts"
     },
     "./choice": {
       "import": "./dist/choice.mjs",
-      "require": "./dist/choice.js"
+      "require": "./dist/choice.js",
+      "types": "./dist/types/choice.d.ts"
     },
     "./choices": {
       "import": "./dist/choices.mjs",
-      "require": "./dist/choices.js"
+      "require": "./dist/choices.js",
+      "types": "./dist/types/choices.d.ts"
     },
     "./expovariate": {
       "import": "./dist/expovariate.mjs",
-      "require": "./dist/expovariate.js"
+      "require": "./dist/expovariate.js",
+      "types": "./dist/types/expovariate.d.ts"
     },
     "./gammavariate": {
       "import": "./dist/gammavariate.mjs",
-      "require": "./dist/gammavariate.js"
+      "require": "./dist/gammavariate.js",
+      "types": "./dist/types/gammavariate.d.ts"
     },
     "./gauss": {
       "import": "./dist/gauss.mjs",
-      "require": "./dist/gauss.js"
+      "require": "./dist/gauss.js",
+      "types": "./dist/types/gauss.d.ts"
     },
     "./getrandbits": {
       "import": "./dist/getrandbits.mjs",
-      "require": "./dist/getrandbits.js"
+      "require": "./dist/getrandbits.js",
+      "types": "./dist/types/getrandbits.d.ts"
     },
     "./lognormvariate": {
       "import": "./dist/lognormvariate.mjs",
-      "require": "./dist/lognormvariate.js"
+      "require": "./dist/lognormvariate.js",
+      "types": "./dist/types/lognormvariate.d.ts"
     },
     "./randbytes": {
       "import": "./dist/randbytes.mjs",
-      "require": "./dist/randbytes.js"
+      "require": "./dist/randbytes.js",
+      "types": "./dist/types/randbytes.d.ts"
     },
     "./randint": {
       "import": "./dist/randint.mjs",
-      "require": "./dist/randint.js"
+      "require": "./dist/randint.js",
+      "types": "./dist/types/randint.d.ts"
     },
     "./randrange": {
       "import": "./dist/randrange.mjs",
-      "require": "./dist/randrange.js"
+      "require": "./dist/randrange.js",
+      "types": "./dist/types/randrange.d.ts"
     },
     "./sample": {
       "import": "./dist/sample.mjs",
-      "require": "./dist/sample.js"
+      "require": "./dist/sample.js",
+      "types": "./dist/types/sample.d.ts"
     },
     "./shuffle": {
       "import": "./dist/shuffle.mjs",
-      "require": "./dist/shuffle.js"
+      "require": "./dist/shuffle.js",
+      "types": "./dist/types/shuffle.d.ts"
     },
     "./triangular": {
       "import": "./dist/triangular.mjs",
-      "require": "./dist/triangular.js"
+      "require": "./dist/triangular.js",
+      "types": "./dist/types/triangular.d.ts"
     },
     "./uniform": {
       "import": "./dist/uniform.mjs",
-      "require": "./dist/uniform.js"
+      "require": "./dist/uniform.js",
+      "types": "./dist/types/uniform.d.ts"
     },
     "./xoshiro128plus": {
       "import": "./dist/xoshiro128plus.mjs",
-      "require": "./dist/xoshiro128plus.js"
+      "require": "./dist/xoshiro128plus.js",
+      "types": "./dist/types/xoshiro128plus.d.ts"
     },
     "./xoshiro128plus/random": {
       "import": "./dist/xoshiro128plus.mjs",
-      "require": "./dist/xoshiro128plus.js"
+      "require": "./dist/xoshiro128plus.js",
+      "types": "./dist/types/xoshiro128plus.d.ts"
     },
     "./xoshiro128plus/seed": {
       "import": "./dist/xoshiro128plus.mjs",
-      "require": "./dist/xoshiro128plus.js"
+      "require": "./dist/xoshiro128plus.js",
+      "types": "./dist/types/xoshiro128plus.d.ts"
     },
     "./xoshiro128plus/getstate": {
       "import": "./dist/xoshiro128plus.mjs",
-      "require": "./dist/xoshiro128plus.js"
+      "require": "./dist/xoshiro128plus.js",
+      "types": "./dist/types/xoshiro128plus.d.ts"
     },
     "./xoshiro128plus/setstate": {
       "import": "./dist/xoshiro128plus.mjs",
-      "require": "./dist/xoshiro128plus.js"
+      "require": "./dist/xoshiro128plus.js",
+      "types": "./dist/types/xoshiro128plus.d.ts"
     }
   },
   "scripts": {
