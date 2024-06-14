@@ -1,0 +1,9 @@
+# Exclude everything
+*
+
+# Include only these files and directories
+!/dist
+!/package.json
+!/README.md
+!/LICENSE
+

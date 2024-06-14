@@ -1,12 +1,112 @@
 {
   "name": "@mnovo323/mrandom",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A pythonic random library for node.",
+  "files": [
+    "dist/",
+    "package.json",
+    "README.md",
+    "LICENSE"
+  ],
   "main": "dist/index.js",
+  "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    },
+    "./betavariate": {
+      "import": "./dist/betavariate.mjs",
+      "require": "./dist/betavariate.js"
+    },
+    "./binomialvariate": {
+      "import": "./dist/binomialvariate.mjs",
+      "require": "./dist/binomialvariate.js"
+    },
+    "./choice": {
+      "import": "./dist/choice.mjs",
+      "require": "./dist/choice.js"
+    },
+    "./choices": {
+      "import": "./dist/choices.mjs",
+      "require": "./dist/choices.js"
+    },
+    "./expovariate": {
+      "import": "./dist/expovariate.mjs",
+      "require": "./dist/expovariate.js"
+    },
+    "./gammavariate": {
+      "import": "./dist/gammavariate.mjs",
+      "require": "./dist/gammavariate.js"
+    },
+    "./gauss": {
+      "import": "./dist/gauss.mjs",
+      "require": "./dist/gauss.js"
+    },
+    "./getrandbits": {
+      "import": "./dist/getrandbits.mjs",
+      "require": "./dist/getrandbits.js"
+    },
+    "./lognormvariate": {
+      "import": "./dist/lognormvariate.mjs",
+      "require": "./dist/lognormvariate.js"
+    },
+    "./randbytes": {
+      "import": "./dist/randbytes.mjs",
+      "require": "./dist/randbytes.js"
+    },
+    "./randint": {
+      "import": "./dist/randint.mjs",
+      "require": "./dist/randint.js"
+    },
+    "./randrange": {
+      "import": "./dist/randrange.mjs",
+      "require": "./dist/randrange.js"
+    },
+    "./sample": {
+      "import": "./dist/sample.mjs",
+      "require": "./dist/sample.js"
+    },
+    "./shuffle": {
+      "import": "./dist/shuffle.mjs",
+      "require": "./dist/shuffle.js"
+    },
+    "./triangular": {
+      "import": "./dist/triangular.mjs",
+      "require": "./dist/triangular.js"
+    },
+    "./uniform": {
+      "import": "./dist/uniform.mjs",
+      "require": "./dist/uniform.js"
+    },
+    "./xoshiro128plus": {
+      "import": "./dist/xoshiro128plus.mjs",
+      "require": "./dist/xoshiro128plus.js"
+    },
+    "./xoshiro128plus/random": {
+      "import": "./dist/xoshiro128plus.mjs",
+      "require": "./dist/xoshiro128plus.js"
+    },
+    "./xoshiro128plus/seed": {
+      "import": "./dist/xoshiro128plus.mjs",
+      "require": "./dist/xoshiro128plus.js"
+    },
+    "./xoshiro128plus/getstate": {
+      "import": "./dist/xoshiro128plus.mjs",
+      "require": "./dist/xoshiro128plus.js"
+    },
+    "./xoshiro128plus/setstate": {
+      "import": "./dist/xoshiro128plus.mjs",
+      "require": "./dist/xoshiro128plus.js"
+    }
+  },
   "scripts": {
     "test": "jest",
-    "build": "tsc",
+    "build:types": "tsc --project tsconfig.json",
+    "build:js": "tsup src/*.ts --format cjs,esm --splitting false",
+    "build": "npm run clean && npm run build:types && npm run build:js",
+    "clean": "rimraf dist",
     "lint": "eslint 'src/**/*.{ts,tsx}'",
     "format": "prettier --write 'src/**/*.{ts,tsx}'"
   },
@@ -41,7 +141,10 @@
     "eslint-plugin-promise": "^6.1.1",
     "jest": "^29.7.0",
     "prettier": "^3.0.3",
+    "rimraf": "^5.0.7",
     "ts-jest": "^29.1.1",
+    "tsc-alias": "^1.8.10",
+    "tsup": "^8.1.0",
     "typescript": "^5.2.2"
   }
 }

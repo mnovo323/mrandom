@@ -35,7 +35,7 @@ function choices<T>(
     }
   }
 
-  if (cumWeights !== undefined && cumWeights.some((w) => w > 0)) {
+  if (cumWeights !== undefined && cumWeights.every((w) => w === 0)) {
     throw new Error('All weights are zero.');
   }
 
